@@ -33,7 +33,7 @@ def accept_connection(server_socket):
     to_monitor.append(client_socket)
 
 def send_msg(client_socket):
-    ''' 
+    '''
     Принимает клиентский сокет, пытается получить запрос от клиента (4кБ).
     Если запрос от клиента получет, отвечает клиенту, иначе - закрывает сокет.
     '''
@@ -60,5 +60,4 @@ def event_loop():
 if __name__ == '__main__':
     to_monitor.append(server_socket)
     event_loop()
-    # accept_connection(server_socket)
     
